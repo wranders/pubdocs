@@ -1,0 +1,35 @@
+site_name: Public Docs
+site_url: https://pubdocs.doubleu.codes/
+site_description: Public Documentation
+site_author: W Anders
+repo_url: https://github.com/wranders/pubdocs/
+edit_uri: edit/src/docs
+copyright: 'Copyright &copy; 2018 W Anders'
+remote_branch: master
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: 'green'
+    accent: 'red'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  logo: 'img/logo.png'
+  favicon: 'img/favicon.ico'
+  feature:
+    tabs: true
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      use_pygments: true
+      noclasses: true
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - Welcome: 'index.md'
