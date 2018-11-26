@@ -1,5 +1,5 @@
 site_name: Public Docs
-site_url: https://pubdocs.doubleu.codes/
+site_url: https://www.doubleu.codes/pubdocs/
 site_description: Public Documentation
 site_author: W Anders
 repo_url: https://github.com/wranders/pubdocs/
@@ -33,3 +33,7 @@ markdown_extensions:
 
 nav:
   - Welcome: 'index.md'
+  - Guides:
+    - Services:
+      - Xen Orchestra:
+        - CentOS: 'guides/services/xen-orchestra/centos/index.md'
