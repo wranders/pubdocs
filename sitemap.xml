@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://pubdocs.doubleu.codes/</loc>
-     <lastmod>2018-11-08</lastmod>
+     <loc>https://www.doubleu.codes/pubdocs/</loc>
+     <lastmod>2018-11-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.doubleu.codes/pubdocs/guides/services/xen-orchestra/centos/</loc>
+     <lastmod>2018-11-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
