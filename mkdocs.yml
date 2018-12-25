@@ -35,5 +35,7 @@ nav:
   - Welcome: 'index.md'
   - Guides:
     - Services:
+      - Gitea:
+        - Gitea - CentOS: 'guides/services/gitea/centos/index.md'
       - Xen Orchestra:
-        - CentOS: 'guides/services/xen-orchestra/centos/index.md'
+        - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/index.md'

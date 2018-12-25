@@ -25,14 +25,10 @@ sudo yum update -y
 Install build tools and Xen Orchestra prerequisites:
 
 !!! Note
-    The `Development Tools` group is needed to build [Redis](https://redis.io/). This can be skipped if Redis is already installed. Not everything in the group is required, but it's easier to install what is required this way.
+    `gcc` is needed to build [Redis](https://redis.io/). This can be skipped if Redis is already installed.
 
 ```shell
-sudo yum groupinstall -y "Development Tools"
-```
-
-```shell
-sudo yum install -y libpng-devel yarn
+sudo yum install -y gcc libpng-devel yarn
 ```
 
 #### Redis
