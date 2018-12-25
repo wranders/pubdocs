@@ -1,0 +1,1151 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Public Documentation">
+      
+      
+        <link rel="canonical" href="https://www.doubleu.codes/pubdocs/guides/services/gitea/centos/">
+      
+      
+        <meta name="author" content="W Anders">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
+    
+    
+      
+        <title>Gitea - CentOS - Public Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.11e41852.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.20ef595d.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#gitea-centos" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.doubleu.codes/pubdocs/" title="Public Docs" class="md-header-nav__button md-logo">
+          
+            <img src="../../../../img/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Public Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Gitea - CentOS
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/wranders/pubdocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../.." title="Welcome" class="md-tabs__link">
+        Welcome
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Guides" class="md-tabs__link md-tabs__link--active">
+          Guides
+        </a>
+      
+    </li>
+  
+
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.doubleu.codes/pubdocs/" title="Public Docs" class="md-nav__button md-logo">
+      
+        <img src="../../../../img/logo.png" width="48" height="48">
+      
+    </a>
+    Public Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/wranders/pubdocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1-1">
+      Gitea
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-1">
+        Gitea
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Gitea - CentOS
+      </label>
+    
+    <a href="./" title="Gitea - CentOS" class="md-nav__link md-nav__link--active">
+      Gitea - CentOS
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repositories" title="Repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql" title="PostgreSQL" class="md-nav__link">
+    PostgreSQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-over-nfs" title="Database over NFS" class="md-nav__link">
+    Database over NFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-database" title="Setup Database" class="md-nav__link">
+    Setup Database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis" title="Redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitea" title="Gitea" class="md-nav__link">
+    Gitea
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nfs" title="NFS" class="md-nav__link">
+    NFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application" title="Application" class="md-nav__link">
+    Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis-setup" title="Redis Setup" class="md-nav__link">
+    Redis Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-redirect" title="HTTPS Redirect" class="md-nav__link">
+    HTTPS Redirect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-2" type="checkbox" id="nav-2-1-2">
+    
+    <label class="md-nav__link" for="nav-2-1-2">
+      Xen Orchestra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-2">
+        Xen Orchestra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../xen-orchestra/centos/" title="Xen Orchestra - CentOS" class="md-nav__link">
+      Xen Orchestra - CentOS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repositories" title="Repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" title="Packages" class="md-nav__link">
+    Packages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql" title="PostgreSQL" class="md-nav__link">
+    PostgreSQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#database-over-nfs" title="Database over NFS" class="md-nav__link">
+    Database over NFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-database" title="Setup Database" class="md-nav__link">
+    Setup Database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis" title="Redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitea" title="Gitea" class="md-nav__link">
+    Gitea
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nfs" title="NFS" class="md-nav__link">
+    NFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application" title="Application" class="md-nav__link">
+    Application
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis-setup" title="Redis Setup" class="md-nav__link">
+    Redis Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https-redirect" title="HTTPS Redirect" class="md-nav__link">
+    HTTPS Redirect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/wranders/pubdocs/edit/src/docs/guides/services/gitea/centos/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="gitea-centos">Gitea - CentOS<a class="headerlink" href="#gitea-centos" title="Permanent link">&para;</a></h1>
+<p>Tested and installed on <code>CentOS 7.6-1810</code>.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<h3 id="repositories">Repositories<a class="headerlink" href="#repositories" title="Permanent link">&para;</a></h3>
+<p>Two third-party repositories are used since CentOS <code>base</code> and <code>epel</code> contain very outdated versions of PostgreSQL and Redis.</p>
+<p>The first is the <a href="https://ius.io/">Inline with Upsteam Stable (IUS) Community Project</a> repository. This install will be using this repository for an updated version of <a href="https://git-scm.com/">Git</a> and <a href="https://redis.io/">Redis</a>.</p>
+<p>The second is the official repository for <a href="https://www.postgresql.org/">PostgreSQL 11</a>.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y <span style="color: #BB6622; font-weight: bold">\</span>
+https://centos7.iuscommunity.org/ius-release.rpm <span style="color: #BB6622; font-weight: bold">\</span>
+https://download.postgresql.org/pub/repos/yum/11/redhat/rhel-7-x86_64/pgdg-centos11-11-2.noarch.rpm
+</pre></div>
+
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">&para;</a></h3>
+<p>The following packages are required. <code>git2u</code> and <code>redis40u</code> are from the IUS repository and named as such to prevent collisions with CentOS standard repositories.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y <span style="color: #BB6622; font-weight: bold">\</span>
+git2u <span style="color: #BB6622; font-weight: bold">\</span>
+redis40u <span style="color: #BB6622; font-weight: bold">\</span>
+postgresql11
+</pre></div>
+
+<p>If this installation's database will be local, include the PostgreSQL server:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y postgresql11-server
+</pre></div>
+
+<p>If any data directories (repositories, database, Gitea custom, LFS, etc.) will be mounted over NFS, install the NFS utilities:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y nfs-utils
+</pre></div>
+
+<h2 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h2>
+<h3 id="database-over-nfs">Database over NFS<a class="headerlink" href="#database-over-nfs" title="Permanent link">&para;</a></h3>
+<p>Create the directory that the NFS export will mount to:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir -p /opt/psql/data
+</pre></div>
+
+<p>Mount the NFS export:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mount -t nfs &lt;NAS IP&gt;:/gitea/database /opt/psql/data
+</pre></div>
+
+<p>Open <code>/etc/fstab</code> for editing and add the following line:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>&lt;NAS IP&gt;:/gitea/database /opt/psql/data  nfs defaults,_netdev    <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>_netdev</code> flag denotes that mounting should be performed after networking has been initialized.</p>
+</div>
+<p>Installing PostgreSQL should have created a <code>postgres</code> user and <code>postgres</code> group. Set ownership of the new directories to that user and group.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chmod -R <span style="color: #666666">700</span> /opt/psql
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chown -R postgres:postgres /opt/psql
+</pre></div>
+
+<p>Edit the PostgreSQL <code>systemd</code> service to set the new database directory:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl edit postgresql-11
+</pre></div>
+
+<p>This will create and override file. Insert the following:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>Service<span style="color: #666666">]</span>
+<span style="color: #19177C">Environment</span><span style="color: #666666">=</span><span style="color: #19177C">PGDATA</span><span style="color: #666666">=</span>/opt/psql/data
+
+<span style="color: #666666">[</span>Unit<span style="color: #666666">]</span>
+<span style="color: #19177C">RequiresMountsFor</span><span style="color: #666666">=</span>/opt/psql/data
+</pre></div>
+
+<h3 id="setup-database">Setup Database<a class="headerlink" href="#setup-database" title="Permanent link">&para;</a></h3>
+<p>Initialize the database:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo /usr/pgsql-11/bin/postgresql-11-setup initdb
+</pre></div>
+
+<p>Open <code>pg_hba.conf</code> for editing.</p>
+<div class="admonition note">
+<p class="admonition-title">Local Storage</p>
+<p><code>/var/lib/pgsql/11/data/pg_hba.conf</code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NFS Storage</p>
+<p><code>/opt/psql/data/pg_hba.conf</code></p>
+</div>
+<p>Edit the following lines to change the authentication method from <code>ident</code> to <code>md5</code>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>   # TYPE   DATABASE        USER            ADDRESS             METHOD
+   # IPv4 connections:
+<span style="color: #A00000">-- host     all             all             127.0.0.1/32        ident</span>
+<span style="color: #00A000">++ host     all             all             127.0.0.1/32        md5</span>
+   # IPv6 connections:
+<span style="color: #A00000">-- host     all             all             ::1/128             ident</span>
+<span style="color: #00A000">++ host     all             all             ::1/128             md5</span>
+</pre></div>
+
+<p>Enable service autostart and start PostgreSQL:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl <span style="color: #008000">enable</span> --now postgresql-11
+</pre></div>
+
+<p>Open the PostgreSQL terminal as the <code>postgre</code> user:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u postgres psql
+</pre></div>
+
+<p>Create the <code>gitea</code> database user:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>CREATE USER gitea WITH PASSWORD <span style="color: #BA2121">&#39;1qazxsw2&#39;</span>;
+</pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It should go without saying, but do not use the provided example password.</p>
+</div>
+<p>Create the <code>gitea</code> database and set the owner to the newly created user:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>CREATE DATABASE gitea OWNER gitea;
+</pre></div>
+
+<p>Grant all privileges on the new database to the new user:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>GRANT ALL PRIVILEGES ON DATABASE gitea TO gitea;
+</pre></div>
+
+<p>Exit the PostgreSQL terminal:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>exit;
+</pre></div>
+
+<h2 id="redis">Redis<a class="headerlink" href="#redis" title="Permanent link">&para;</a></h2>
+<p>Open <code>/etc/redis.conf</code> for editing and change the following values:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- daemonize no</span>
+<span style="color: #00A000">++ daemonize yes</span>
+
+<span style="color: #A00000">-- supervised no</span>
+<span style="color: #00A000">++ supervised systemd</span>
+
+<span style="color: #A00000">-- appendonly no</span>
+<span style="color: #00A000">++ appendonly yes</span>
+</pre></div>
+
+<p>Open <code>/etc/sysctl.conf</code> for editing and add the following line:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>vm.overcommit_memory <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a system tune-able for Redis to prevent forking errors resulting from duplicate data consuming all of the allocated memory.</p>
+</div>
+<p>Generate a new <code>initramfs</code> with the new tune-able:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo dracut -v -f
+</pre></div>
+
+<p>Enable <code>redis</code> autostart and start the service:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl <span style="color: #008000">enable</span> --now redis
+</pre></div>
+
+<h2 id="gitea">Gitea<a class="headerlink" href="#gitea" title="Permanent link">&para;</a></h2>
+<h3 id="nfs">NFS<a class="headerlink" href="#nfs" title="Permanent link">&para;</a></h3>
+<p>Three different exports should be used to store Gitea data. The following structure is used to mimic the default directory structure and minimize the number of customizations in the setup.</p>
+<ul>
+<li><code>custom</code> - Configuration file and customizations</li>
+<li><code>data</code> - The <code>lfs</code> directory, which stores Git Large File Storage objects</li>
+<li><code>gitea-repositories</code> - All repositories</li>
+</ul>
+<p>Create the directories:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir -p /opt/gitea/<span style="color: #666666">{</span>custom,data,gitea-repositories<span style="color: #666666">}</span>
+</pre></div>
+
+<p>Create the directory for LFS:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir /opt/gitea/data/lfs
+</pre></div>
+
+<p>Mount the NFS exports:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mount -t nfs &lt;NAS IP&gt;:/gitea/custom /opt/gitea/custom
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mount -t nfs &lt;NAS IP&gt;:/gitea/gitea-repositories /opt/gitea/gitea-repositories
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mount -t nfs &lt;NAS IP&gt;:/gitea/data_lfs /opt/gitea/data/lfs
+</pre></div>
+
+<p>Open <code>/etc/fstab</code> for editing and add the following line:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>&lt;NAS IP&gt;:/gitea/custom              /opt/gitea/custom               nfs defaults,_netdev    <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+&lt;NAS IP&gt;:/gitea/gitea-repositories  /opt/gitea/gitea-repositories   nfs defaults,_netdev    <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+&lt;NAS IP&gt;:/gitea/data_lfs            /opt/gitea/data/lfs             nfs defaults,_netdev    <span style="color: #666666">0</span> <span style="color: #666666">0</span>
+</pre></div>
+
+<h3 id="application">Application<a class="headerlink" href="#application" title="Permanent link">&para;</a></h3>
+<p>If NFS is not used and the application directory does not exist, create it:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir -p /opt/gitea
+</pre></div>
+
+<p>Create a user and group for Gitea</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <code>home</code> directory should be used to store SSH keys for the application.</p>
+</div>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo adduser -rm -s /bin/bash gitea
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If NFS is not used, create the application directory</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir -p /opt/gitea
+</pre></div>
+
+</div>
+<p>Set the owner and permissions for the application directory.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chmod -R <span style="color: #666666">700</span> /opt/gitea
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chown -R gitea:gitea /opt/gitea
+</pre></div>
+
+<p>Get the link for the most recent version of Gitea <a href="https://dl.gitea.io/gitea/">here</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Choose the most recent tagged version instead of Master.</p>
+</div>
+<p>Choose <code>gitea-&lt;version&gt;-linux-amd64</code>. Version <code>1.6.1</code> was used and tested here.</p>
+<p>Download the application as the <code>gitea</code> user to the file <code>gitea</code>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u gitea curl https://dl.gitea.io/gitea/1.6.1/gitea-1.6.1-linux-amd64 -o /opt/gitea/gitea
+</pre></div>
+
+<p>Make the dowloaded application executable:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chmod +x /opt/gitea/gitea
+</pre></div>
+
+<p>Open the port desired to run the application on. The tested install used standard HTTP ports and requires permissions to listen on ports less than 1000.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --permanent --zone<span style="color: #666666">=</span>public --add-port<span style="color: #666666">=80</span>/tcp
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep port <code>80</code> open if HTTP -&gt; HTTPS redirection will be used.</p>
+</div>
+<p>If HTTPS will be used, remember to open <code>443</code> as well.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --permanent --zone<span style="color: #666666">=</span>public --add-port<span style="color: #666666">=443</span>/tcp
+</pre></div>
+
+<p>Reload the firewall:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --reload
+</pre></div>
+
+<p>Allow the Gitea application to listen on ports less than 1000:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo setcap <span style="color: #BA2121">&#39;cap_net_bind_service=+ep&#39;</span> /opt/gitea/gitea
+</pre></div>
+
+<p>Create and open a <code>systemd</code> service file:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo touch /etc/systemd/system/gitea.service
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>Unit<span style="color: #666666">]</span>
+<span style="color: #19177C">Description</span><span style="color: #666666">=</span>Gitea <span style="color: #666666">(</span>Git with a cup of tea<span style="color: #666666">)</span>
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>syslog.target
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>network.target
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>postgresql.service
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>redis.service
+
+<span style="color: #666666">[</span>Service<span style="color: #666666">]</span>
+<span style="color: #19177C">RestartSec</span><span style="color: #666666">=</span>2s
+<span style="color: #19177C">Type</span><span style="color: #666666">=</span>simple
+<span style="color: #19177C">User</span><span style="color: #666666">=</span>gitea
+<span style="color: #19177C">Group</span><span style="color: #666666">=</span>gitea
+<span style="color: #19177C">WorkingDirectory</span><span style="color: #666666">=</span>/opt/gitea/
+<span style="color: #19177C">ExecStart</span><span style="color: #666666">=</span>/opt/gitea/gitea web --port <span style="color: #666666">80</span>
+<span style="color: #19177C">Restart</span><span style="color: #666666">=</span>always
+<span style="color: #19177C">CapabilityBoundingSet</span><span style="color: #666666">=</span>CAP_NET_BIND_SERVICE
+<span style="color: #19177C">AmbientCapabilities</span><span style="color: #666666">=</span>CAP_NET_BIND_SERVICE
+
+<span style="color: #666666">[</span>Install<span style="color: #666666">]</span>
+<span style="color: #19177C">WantedBy</span><span style="color: #666666">=</span>multi-user.target
+</pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ensure the desired port is reflected on the <code>ExecStart</code> line.</p>
+</div>
+<p>Enable autostart on the Gitea service and start it:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl <span style="color: #008000">enable</span> --now gitea
+</pre></div>
+
+<p>Navigate to <code>http://&lt;server IP&gt;/install</code> to complete setup.</p>
+<h3 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h3>
+<p>Input the database connection information:</p>
+<p><img alt="Gitea Database Setup" src="../img/gitea_setup-database.png" /></p>
+<p>Set the general settings of the application. If NFS is used and the above instructions were followed, the default directory locations are used and do not need to be changed.</p>
+<p><img alt="Gitea General Setup" src="../img/gitea_setup-general_settings.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If standard HTTP and HTTPS are used, the port can be removed from <strong>Gitea Base URL</strong> to show nice URLs.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If HTTPS is used, set the listen port to <code>443</code>. Redirection can be setup later.</p>
+</div>
+<p><img alt="Gitea Optional Setup" src="../img/gitea_setup-optional.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Enable Local Mode</strong> serves JS and CSS from the server itself instead of using CDNs.</p>
+</div>
+<p><img alt="Gitea Administrator Setup" src="../img/gitea_setup-administrator.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the <strong>Administrator Account Settings</strong> are not filled out here, the first account created will become the administrator. Its a good idea to go ahead and create this account now.</p>
+</div>
+<p>Once everything is filled out, click install and wait for the process to complete.</p>
+<h3 id="redis-setup">Redis Setup<a class="headerlink" href="#redis-setup" title="Permanent link">&para;</a></h3>
+<p>Open <code>/opt/gitea/custom/conf/app.ini</code> for editing. Delete any existing <code>[session]</code> settings.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- [session]</span>
+<span style="color: #A00000">-- PROVIDER          = data/session</span>
+</pre></div>
+
+<p>Enter the following information to use Redis as cache and session storage:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>cache<span style="color: #666666">]</span>
+<span style="color: #19177C">ADAPTER</span>  <span style="color: #666666">=</span> redis
+<span style="color: #19177C">INTERVAL</span> <span style="color: #666666">=</span> <span style="color: #666666">60</span>
+<span style="color: #19177C">HOST</span>     <span style="color: #666666">=</span> <span style="color: #19177C">network</span><span style="color: #666666">=</span>tcp,addr<span style="color: #666666">=</span>:6379,db<span style="color: #666666">=0</span>,pool_size<span style="color: #666666">=100</span>,idle_timeout<span style="color: #666666">=180</span>
+<span style="color: #19177C">ITEM_TTL</span> <span style="color: #666666">=</span> 16h
+
+<span style="color: #666666">[</span>session<span style="color: #666666">]</span>
+<span style="color: #19177C">PROVIDER</span>          <span style="color: #666666">=</span> redis
+<span style="color: #19177C">PROVIDER_CONFIG</span>   <span style="color: #666666">=</span> <span style="color: #19177C">network</span><span style="color: #666666">=</span>tcp,addr<span style="color: #666666">=</span>:6379,db<span style="color: #666666">=0</span>,pool_size<span style="color: #666666">=100</span>,idle_timeout<span style="color: #666666">=180</span>
+<span style="color: #19177C">COOKIE_NAME</span>       <span style="color: #666666">=</span> gitea
+<span style="color: #19177C">COOKIE_SECURE</span>     <span style="color: #666666">=</span> <span style="color: #008000">false</span>
+<span style="color: #19177C">ENABLE_SET_COOKIE</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+<span style="color: #19177C">GC_INTERVAL_TIME</span>  <span style="color: #666666">=</span> <span style="color: #666666">86400</span>
+<span style="color: #19177C">SESSION_LIFE_TIME</span> <span style="color: #666666">=</span> <span style="color: #666666">86400</span>
+</pre></div>
+
+<p>Restart Gitea:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl restart gitea.service
+</pre></div>
+
+<h3 id="https-redirect">HTTPS Redirect<a class="headerlink" href="#https-redirect" title="Permanent link">&para;</a></h3>
+<p>Open <code>/opt/gitea/custom/conf/app.ini</code> for editing.</p>
+<p>Under the <code>[server]</code> section, enter the following:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #19177C">REDIRECT_OTHER_PORT</span> <span style="color: #666666">=</span> <span style="color: #008000">true</span>
+<span style="color: #19177C">PORT_TO_REDIRECT</span>    <span style="color: #666666">=</span> <span style="color: #666666">80</span>
+</pre></div>
+
+<p><code>PORT_TO_REDIRECT</code> is the port to listen for HTTP requests then redirects to the port identified in <code>HTTP_PORT</code>, which should be <code>443</code> if using HTTPS.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>Gitea is now setup and ready for use.</p>
+<p>Refer to the <a href="https://docs.gitea.io/en-us/config-cheat-sheet/">Configuration Cheatsheet</a> for additional setup.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../.." title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Welcome
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../xen-orchestra/centos/" title="Xen Orchestra - CentOS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Xen Orchestra - CentOS
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 W Anders
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.9e1f3b71.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
