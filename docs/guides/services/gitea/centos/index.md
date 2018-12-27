@@ -256,13 +256,6 @@ Create a user and group for Gitea
 sudo adduser -rm -s /bin/bash gitea
 ```
 
-!!! Note
-    If NFS is not used, create the application directory
-
-    ```shell
-    sudo mkdir -p /opt/gitea
-    ```
-
 Set the owner and permissions for the application directory.
 
 ```shell
