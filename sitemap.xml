@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://www.doubleu.codes/pubdocs/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <lastmod>2019-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://www.doubleu.codes/pubdocs/guides/services/gitea/centos/</loc>
-     <lastmod>2018-12-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.doubleu.codes/pubdocs/guides/services/xen-orchestra/centos/</loc>
-     <lastmod>2018-12-26</lastmod>
+     <loc>https://www.doubleu.codes/pubdocs/kb/interface-bit-rates/</loc>
+     <lastmod>2019-06-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
