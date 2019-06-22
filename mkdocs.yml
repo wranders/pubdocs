@@ -4,7 +4,7 @@ site_description: Public Documentation
 site_author: W Anders
 repo_url: https://github.com/wranders/pubdocs/
 edit_uri: edit/src/docs
-copyright: 'Copyright &copy; 2018 W Anders'
+copyright: 'Copyright &copy; 2019 W Anders'
 remote_branch: master
 
 theme:
@@ -33,9 +33,11 @@ markdown_extensions:
 
 nav:
   - Welcome: 'index.md'
-  - Guides:
-    - Services:
-      - Gitea:
-        - Gitea - CentOS: 'guides/services/gitea/centos/index.md'
-      - Xen Orchestra:
-        - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/index.md'
+  - Knowledge Base:
+    - Interface Bit Rates: 'kb/interface-bit-rates/index.md'
+# - Guides:
+#   - Services:
+#     - Gitea:
+#       - Gitea - CentOS: 'guides/services/gitea/centos/index.md'
+#     - Xen Orchestra:
+#       - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/index.md'
