@@ -32,12 +32,14 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Welcome: 'index.md'
+  - Welcome: 'README.md'
   - Knowledge Base:
-    - Interface Bit Rates: 'kb/interface-bit-rates/index.md'
+    - Interface Bit Rates: 'kb/interface-bit-rates/README.md'
+    - IETF RFC:
+      - LDAP: 'rfc/ldap/README.md'
 # - Guides:
 #   - Services:
 #     - Gitea:
-#       - Gitea - CentOS: 'guides/services/gitea/centos/index.md'
+#       - Gitea - CentOS: 'guides/services/gitea/centos/README.md'
 #     - Xen Orchestra:
-#       - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/index.md'
+#       - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/README.md'
