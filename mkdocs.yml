@@ -34,6 +34,9 @@ markdown_extensions:
 nav:
   - Welcome: 'README.md'
   - Knowledge Base:
+    - Servers:
+      - Dell R510: 'kb/servers/dell-r510/README.md'
+      - Dell R610: 'kb/servers/dell-r610/README.md'
     - Interface Bit Rates: 'kb/interface-bit-rates/README.md'
     - IETF RFC:
       - LDAP: 'rfc/ldap/README.md'
