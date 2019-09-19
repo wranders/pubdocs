@@ -34,6 +34,7 @@ markdown_extensions:
 nav:
   - Welcome: 'README.md'
   - Knowledge Base:
+    - 'kb/README.md'
     - Servers:
       - Dell R510: 'kb/servers/dell-r510/README.md'
       - Dell R610: 'kb/servers/dell-r610/README.md'
