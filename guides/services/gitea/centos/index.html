@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.01803549.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -192,7 +192,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../../.." title="Welcome" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../.." class="md-tabs__link md-tabs__link--active">
         Welcome
       </a>
     
@@ -202,13 +202,19 @@
         
   
   
+    
+    
+  
+  
     <li class="md-tabs__item">
       
-        <a href="../../../../kb/interface-bit-rates/" title="Knowledge Base" class="md-tabs__link">
+        <a href="../../../../kb/servers/dell-r510/" class="md-tabs__link">
           Knowledge Base
         </a>
       
     </li>
+  
+
   
 
       
@@ -216,7 +222,7 @@
   </div>
 </nav>
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -291,6 +297,54 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Servers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Servers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/servers/dell-r510/" title="Dell R510" class="md-nav__link">
+      Dell R510
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/servers/dell-r610/" title="Dell R610" class="md-nav__link">
+      Dell R610
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../../../../kb/interface-bit-rates/" title="Interface Bit Rates" class="md-nav__link">
       Interface Bit Rates
@@ -305,13 +359,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
     
-    <label class="md-nav__link" for="nav-2-2">
+    <label class="md-nav__link" for="nav-2-3">
       IETF RFC
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-2">
+      <label class="md-nav__title" for="nav-2-3">
         IETF RFC
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -360,7 +414,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     Prerequisites
   </a>
   
@@ -368,14 +422,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#repositories" title="Repositories" class="md-nav__link">
+  <a href="#repositories" class="md-nav__link">
     Repositories
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#packages" title="Packages" class="md-nav__link">
+  <a href="#packages" class="md-nav__link">
     Packages
   </a>
   
@@ -387,7 +441,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#postgresql" title="PostgreSQL" class="md-nav__link">
+  <a href="#postgresql" class="md-nav__link">
     PostgreSQL
   </a>
   
@@ -395,14 +449,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#database-over-nfs" title="Database over NFS" class="md-nav__link">
+  <a href="#database-over-nfs" class="md-nav__link">
     Database over NFS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup-database" title="Setup Database" class="md-nav__link">
+  <a href="#setup-database" class="md-nav__link">
     Setup Database
   </a>
   
@@ -414,14 +468,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#redis" title="Redis" class="md-nav__link">
+  <a href="#redis" class="md-nav__link">
     Redis
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gitea" title="Gitea" class="md-nav__link">
+  <a href="#gitea" class="md-nav__link">
     Gitea
   </a>
   
@@ -429,35 +483,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nfs" title="NFS" class="md-nav__link">
+  <a href="#nfs" class="md-nav__link">
     NFS
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#application" title="Application" class="md-nav__link">
+  <a href="#application" class="md-nav__link">
     Application
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup" title="Setup" class="md-nav__link">
+  <a href="#setup" class="md-nav__link">
     Setup
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#redis-setup" title="Redis Setup" class="md-nav__link">
+  <a href="#redis-setup" class="md-nav__link">
     Redis Setup
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#https-redirect" title="HTTPS Redirect" class="md-nav__link">
+  <a href="#https-redirect" class="md-nav__link">
     HTTPS Redirect
   </a>
   
@@ -469,7 +523,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" title="Conclusion" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     Conclusion
   </a>
   
@@ -860,7 +914,7 @@ postgresql11
       
     </div>
     
-      <script src="../../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../../../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
