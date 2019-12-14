@@ -2,10 +2,6 @@
 
 ![Dell PowerEdge R610](img/dell-pe-r510.jpg)
 
-!!! Missing
-    This entry is under construction and missing
-    significant amounts of information.
-
 ## General Information
 
 |                   |                                                                               |
@@ -30,8 +26,14 @@
 
 ### System Boards
 
-| Part  | Dell Part #   |
-| :-    | :-            |
+| Part                     | Dell Part #   |
+| :-                       | :-            |
+| Motherboard              | DPRKF         |
+| Backplane                | Y776M / DGWM2 |
+| Backplane SAS Controller | 6V580         |
+| Power Distribution Board | X847M         |
+| PCIe Riser Frame         | 4HJHF         |
+| PCIe Riser               | H949M         |
 
 ### Power Supplies / Batteries
 
@@ -43,20 +45,44 @@
 
 ### Cables
 
-| Part              | Dell Part #   |
-| :-                | :-            |
-| Control Panel     | N269G         |
-| H200/H700 SAS A   | Y674P
+| Part              | Dell Part # |
+| :-                | :-          |
+| Control Panel     | N269G       |
+| H200/H700 SAS A   | Y674P       |
+| H200/H700 SAS B   | NJXNN       |
+| SAS Activity      | T871M       |
+| Backplane, 8-pin  | J9KF9       |
+| Backplane, 10-pin | N374P       |
+| Backplane, 50-pin | K430P       |
+| HDD 12 SAS        | N373P       |
+| HDD 13 SAS        | M300P       |
 
 ### RAID Controllers
 
-| Part  | Dell Part #   |
-| :-    | :-            |
+| Part            | Dell Part #                                           |
+| :-              | :-                                                    |
+| SAS 5/E 256MB   | DM479 / GP297 / UT568 / XM768                          |
+| SAS 6/iR        | YK838 / JW063 / CR679                                 |
+| PERC 6/i        | H726F / DX481 / T954J / WY335                         |
+| PERC S300       | Y159P                                                 |
+| PERC H200       | 3J8FW                                                 |
+| PERC H700 512MB | CNXVV / 1THG8 / H2R6M / K883J / W56W0 / R374M / XXFVX |
+| PREC H700 1GB   | HCR2Y                                                 |
+| PERC H800 512MB | 71N7N / 87V49 / D90PG / N743J / NCHRW / R1HPD         |
+| PERC H800 1GB   | 5KYFR / VVGYD                                         |
 
 ### Accessories
 
-| Part  | Dell Part #   |
-| :-    | :-            |
+| Part                      | Dell Part #                   |
+| :-                        | :-                            |
+| Chassis Locking Top Cover | MF097 / JCRV1                 |
+| Heatsink                  | 6DMRF                         |
+| System Fan                | 90C8M                         |
+| iDRAC 6 Express           | JPMJ3 / DW592 / K9J8N / Y383M |
+| iDRAC 6 Enterprise        | J675T / K869T / MU531 / R168K |
+| 3.5" Drive Tray/Caddy     | F238F                         |
+| PCI Slotted Blank Cover   | DD463                         |
+| CPU Shroud                | 27DFW                         |
 
 ## Documents
 
