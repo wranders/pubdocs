@@ -6,7 +6,12 @@
         {
             "label": "Launch Local Server",
             "type": "shell",
-            "command": "py -m mkdocs serve",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "mkdocs",
+                "serve"
+            ],
             "group": "test",
             "presentation": {
                 "echo": true,
@@ -20,7 +25,12 @@
         {
             "label": "Build and Deploy",
             "type": "shell",
-            "command": "py -m mkdocs gh-deploy",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "mkdocs",
+                "gh-deploy"
+            ],
             "group": "build",
             "presentation": {
                 "echo": true,
@@ -29,8 +39,7 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": true
-            },
-            "problemMatcher": []
+            }
         }
     ]
 }
