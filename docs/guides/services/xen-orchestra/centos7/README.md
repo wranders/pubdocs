@@ -38,7 +38,7 @@ sudo yum update -y
 Install Node.js, Yarn, Redis, and Git:
 
 ```sh
-sudo yum install -y nodejs yarn redis git
+sudo yum install -y nodejs yarn redis git gcc-c++
 ```
 
 ## Redis
