@@ -28,6 +28,7 @@ markdown_extensions:
       use_pygments: true
       noclasses: true
   - pymdownx.superfences
+  - pymdownx.details
   - toc:
       permalink: true
 
@@ -41,9 +42,9 @@ nav:
     - Interface Bit Rates: 'kb/interface-bit-rates/README.md'
     - IETF RFC:
       - LDAP: 'rfc/ldap/README.md'
-# - Guides:
-#   - Services:
+  - Guides:
+    - Services:
 #     - Gitea:
 #       - Gitea - CentOS: 'guides/services/gitea/centos/README.md'
-#     - Xen Orchestra:
-#       - Xen Orchestra - CentOS: 'guides/services/xen-orchestra/centos/README.md'
+      - Xen Orchestra:
+        - Xen Orchestra - CentOS 7: 'guides/services/xen-orchestra/centos7/README.md'
