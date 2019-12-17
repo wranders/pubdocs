@@ -1,0 +1,1495 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Public Documentation">
+      
+      
+        <link rel="canonical" href="https://www.doubleu.codes/pubdocs/guides/services/xen-orchestra/centos7/">
+      
+      
+        <meta name="author" content="W Anders">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Xen Orchestra - CentOS 7 - Public Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#xen-orchestra-centos-7" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.doubleu.codes/pubdocs/" title="Public Docs" class="md-header-nav__button md-logo">
+          
+            <img src="../../../../img/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Public Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Xen Orchestra - CentOS 7
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/wranders/pubdocs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../../.." class="md-tabs__link">
+        Welcome
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../kb/" class="md-tabs__link">
+          Knowledge Base
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          Guides
+        </a>
+      
+    </li>
+  
+
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.doubleu.codes/pubdocs/" title="Public Docs" class="md-nav__button md-logo">
+      
+        <img src="../../../../img/logo.png" width="48" height="48">
+      
+    </a>
+    Public Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/wranders/pubdocs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Knowledge Base
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Knowledge Base
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/" title="Knowledge Base" class="md-nav__link">
+      Knowledge Base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Servers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Servers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/servers/dell-r510/" title="Dell R510" class="md-nav__link">
+      Dell R510
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/servers/dell-r610/" title="Dell R610" class="md-nav__link">
+      Dell R610
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../kb/interface-bit-rates/" title="Interface Bit Rates" class="md-nav__link">
+      Interface Bit Rates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      IETF RFC
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        IETF RFC
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../rfc/ldap/" title="LDAP" class="md-nav__link">
+      LDAP
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Services
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1" type="checkbox" id="nav-3-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1-1">
+      Xen Orchestra
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-1">
+        Xen Orchestra
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Xen Orchestra - CentOS 7
+      </label>
+    
+    <a href="./" title="Xen Orchestra - CentOS 7" class="md-nav__link md-nav__link--active">
+      Xen Orchestra - CentOS 7
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-build" class="md-nav__link">
+    Clone and Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https" class="md-nav__link">
+    HTTPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemd" class="md-nav__link">
+    systemd
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfs-mounts" class="md-nav__link">
+    NFS Mounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auth-github" class="md-nav__link">
+    auth-github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-google" class="md-nav__link">
+    auth-google
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-ldap" class="md-nav__link">
+    auth-ldap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-saml" class="md-nav__link">
+    auth-saml
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-reports" class="md-nav__link">
+    backup-reports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer" class="md-nav__link">
+    load-balancer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perf-alert" class="md-nav__link">
+    perf-alert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdn-controller" class="md-nav__link">
+    sdn-controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-email" class="md-nav__link">
+    transport-email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-icinga2" class="md-nav__link">
+    transport-icinga2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-nagios" class="md-nav__link">
+    transport-nagios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-slack" class="md-nav__link">
+    transport-slack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-xmpp" class="md-nav__link">
+    transport-xmpp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-report" class="md-nav__link">
+    usage-report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-hooks" class="md-nav__link">
+    web-hooks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#repositories" class="md-nav__link">
+    Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    Application
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-and-build" class="md-nav__link">
+    Clone and Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    HTTP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#https" class="md-nav__link">
+    HTTPS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systemd" class="md-nav__link">
+    systemd
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfs-mounts" class="md-nav__link">
+    NFS Mounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    Plugins
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auth-github" class="md-nav__link">
+    auth-github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-google" class="md-nav__link">
+    auth-google
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-ldap" class="md-nav__link">
+    auth-ldap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auth-saml" class="md-nav__link">
+    auth-saml
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-reports" class="md-nav__link">
+    backup-reports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer" class="md-nav__link">
+    load-balancer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perf-alert" class="md-nav__link">
+    perf-alert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdn-controller" class="md-nav__link">
+    sdn-controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-email" class="md-nav__link">
+    transport-email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-icinga2" class="md-nav__link">
+    transport-icinga2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-nagios" class="md-nav__link">
+    transport-nagios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-slack" class="md-nav__link">
+    transport-slack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-xmpp" class="md-nav__link">
+    transport-xmpp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-report" class="md-nav__link">
+    usage-report
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-hooks" class="md-nav__link">
+    web-hooks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/wranders/pubdocs/edit/src/docs/guides/services/xen-orchestra/centos7/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="xen-orchestra-centos-7">Xen-Orchestra - CentOS 7<a class="headerlink" href="#xen-orchestra-centos-7" title="Permanent link">&para;</a></h1>
+<p>This guide was written using the following versions:</p>
+<ul>
+<li>CentOS 7.7.1908</li>
+<li>Xen-Orchestra 5.53</li>
+</ul>
+<p>This guide will set up Xen-Orchestra on CentOS 7 with a self-signed TLS certificate.</p>
+<h2 id="repositories">Repositories<a class="headerlink" href="#repositories" title="Permanent link">&para;</a></h2>
+<p>Node.js 8:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>curl -sL https://rpm.nodesource.com/setup_8.x | sudo -E bash -
+</pre></div>
+
+<p>Yarn:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+</pre></div>
+
+<p>Extra Packages:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y epel-release
+</pre></div>
+
+<h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
+<p>Update the newly installed repositories and upgrade any outdated packages:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum update -y
+</pre></div>
+
+<p>Install Node.js, Yarn, Redis, and Git:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y nodejs yarn redis git
+</pre></div>
+
+<h2 id="redis">Redis<a class="headerlink" href="#redis" title="Permanent link">&para;</a></h2>
+<p>Set Redis to start on boot and start:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl <span style="color: #008000">enable</span> --now redis.service
+</pre></div>
+
+<p>Verify Redis is running:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>redis-cli ping
+</pre></div>
+
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>PONG
+</pre></div>
+
+<h2 id="application">Application<a class="headerlink" href="#application" title="Permanent link">&para;</a></h2>
+<p>Create a user for Xen-Orchestra:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo adduser -mr -s /sbin/nologin xo
+</pre></div>
+
+<div class="admonition error">
+<p class="admonition-title">Critical<p>Do not run Xen-Orchestra as the <code>root</code> user.</p>
+</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info<p>The <code>-m</code> flag creates a home directory for the <code>xo</code> user so <code>yarn</code> can create its cache.</p>
+</p>
+</div>
+<h3 id="clone-and-build">Clone and Build<a class="headerlink" href="#clone-and-build" title="Permanent link">&para;</a></h3>
+<p>Clone the Xen-Orchestra repository to the <code>/opt/</code> directory:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo git clone -b master https://github.com/vatesfr/xen-orchestra /opt/xen-orchestra
+</pre></div>
+
+<p>Set the <code>xo</code> user as the owner of the repository directory:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chown -R xo:xo /opt/xen-orchestra
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info<p><code>yarn</code> commands are run with the <code>--cwd</code> so that they can be run from any working directory. This can be omitted if the PWD is <code>/opt/xen-orchestra</code> or the directory Xen-Orchestra was cloned to.</p>
+</p>
+</div>
+<p>Gather Yarn dependencies and build the application. This will take a while:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo yarn --cwd /opt/xen-orchestra <span style="color: #666666">&amp;&amp;</span> <span style="color: #BB6622; font-weight: bold">\</span>
+sudo -u xo yarn --cwd /opt/xen-orchestra build
+</pre></div>
+
+<p>Create the configuration and data directories:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir /etc/xo-server /var/lib/xo-server
+</pre></div>
+
+<p>Copy the sample configuration file to the configuration directory:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo cp /opt/xen-orchestra/packages/xo-server/sample.config.toml /etc/xo-server/config.toml
+</pre></div>
+
+<p>Set ownership of the data directory to the <code>xo</code> user:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chown xo:xo /var/lib/xo-server
+</pre></div>
+
+<h3 id="http">HTTP<a class="headerlink" href="#http" title="Permanent link">&para;</a></h3>
+<p>Allow Node.js to bind to privileged ports:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo setcap <span style="color: #19177C">cap_net_bind_service</span><span style="color: #666666">=</span>+ep <span style="color: #008000; font-weight: bold">$(</span>which node<span style="color: #008000; font-weight: bold">)</span>
+</pre></div>
+
+<p>Allow HTTP (port 80) access through the firewall:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --permanent --zone<span style="color: #666666">=</span>public --add-service<span style="color: #666666">=</span>http
+</pre></div>
+
+<h3 id="https">HTTPS<a class="headerlink" href="#https" title="Permanent link">&para;</a></h3>
+<p>Enable HTTP -&gt; HTTPS redirection:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/# redirectToHttps = true/redirectToHttps = true/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- # redirectToHttps = true</span>
+<span style="color: #00A000">++ redirectToHttps = true</span>
+</pre></div>
+
+</details>
+<p>Enable <code>SameSite</code> and <code>Secure</code> cookies:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/#sameSite = true/sameSite = true/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- #sameSite = true</span>
+<span style="color: #00A000">++ sameSite = true</span>
+</pre></div>
+
+</details>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/#secure = true/secure = true/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- #secure = true</span>
+<span style="color: #00A000">++ secure = true</span>
+</pre></div>
+
+</details>
+<p>Enable the second HTTP listener for HTTPS (port 443):</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/# \[\[http.listen\]\]/\[\[http.listen\]\]/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- # [[http.listen]]</span>
+<span style="color: #00A000">++ [[http.listen]]</span>
+</pre></div>
+
+</details>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/# port = 443/port = 443/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- # port = 443</span>
+<span style="color: #00A000">++ port = 443</span>
+</pre></div>
+
+</details>
+<p>Set the file paths for the TLS key and certificate:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&quot;s/# key = &#39;.\/key.pem&#39;/key = &#39;\/etc\/ssl\/private\/xo\/key.pem&#39;/g&quot;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- # key = &#39;./key.pem&#39;</span>
+<span style="color: #00A000">++ key = &#39;/etc/ssl/private/xo/key.pem&#39;</span>
+</pre></div>
+
+</details>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&quot;s/# cert = &#39;.\/certificate.pem&#39;/cert = &#39;\/etc\/ssl\/private\/xo\/certificate.pem&#39;/g&quot;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- # cert = &#39;./certificate.pem&#39;</span>
+<span style="color: #00A000">++ cert = &#39;/etc/ssl/private/xo/certificate.pem&#39;</span>
+</pre></div>
+
+</details>
+<details class="summary"><summary><code>/etc/xo-server/config.toml</code></summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">[http]</span>
+redirectToHttps <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">true</span>
+
+<span style="color: #008000; font-weight: bold">[http.cookies]</span>
+sameSite <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">true</span>
+secure <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">true</span>
+
+<span style="color: #008000; font-weight: bold">[[http.listen]]</span>
+port <span style="color: #666666">=</span> <span style="color: #666666">80</span>
+
+<span style="color: #008000; font-weight: bold">[[http.listen]]</span>
+port <span style="color: #666666">=</span> <span style="color: #666666">443</span>
+cert <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;/etc/ssl/private/xo/certificate.pem&#39;</span>
+key <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;/etc/ssl/private/xo/key.pem&#39;</span>
+</pre></div>
+
+</details>
+<p>Create the directory for the TLS key and certificates:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir -p /etc/ssl/private/xo
+</pre></div>
+
+<p>Set the <code>xo</code> user as the owner of this directory:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chown xo:xo /etc/ssl/private/xo
+</pre></div>
+
+<p>Set this directory so that no one but the <code>xo</code> user can access it:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo chmod <span style="color: #666666">700</span> /etc/ssl/private/xo
+</pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Existing certificates</p>
+<p>Existing TLS certificate can be used instead of self-signed.</p>
+<p>To avoid further edits to the configuration file, preserve the file names and locations used in this self-signed example:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>Certificate:    `/etc/ssl/private/xo/certificate.pem`
+Key:            `/etc/ssl/private/xo/key.pem`
+</pre></div>
+
+
+<p>The following <code>req.conf</code> file and <code>openssl</code> command can be skipped in this case.</p>
+</div>
+<p>Using your prefered text editor, create <code>/etc/ssl/private/xo/req.conf</code>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>req<span style="color: #666666">]</span>
+<span style="color: #19177C">default_bits</span>        <span style="color: #666666">=</span> <span style="color: #666666">2048</span>
+<span style="color: #19177C">default_md</span>          <span style="color: #666666">=</span> sha256
+<span style="color: #19177C">distinguished_name</span>  <span style="color: #666666">=</span> dn_req
+<span style="color: #19177C">x509_extensions</span>     <span style="color: #666666">=</span> v3_req
+<span style="color: #19177C">prompt</span>              <span style="color: #666666">=</span> no
+
+<span style="color: #666666">[</span>v3_req<span style="color: #666666">]</span>
+<span style="color: #19177C">keyUsage</span>            <span style="color: #666666">=</span> digitalSignature, keyEncipherment
+<span style="color: #19177C">extendedKeyUsage</span>    <span style="color: #666666">=</span> serverAuth
+<span style="color: #19177C">basicConstraints</span>    <span style="color: #666666">=</span> critical, CA:FALSE, pathlen:0
+<span style="color: #19177C">subjectAltName</span>      <span style="color: #666666">=</span> @alt_names
+
+<span style="color: #666666">[</span>dn_req<span style="color: #666666">]</span>
+<span style="background-color: #ffffcc"><span style="color: #19177C">CN</span>  <span style="color: #666666">=</span> xo.example.local
+</span><span style="color: #19177C">OU</span>  <span style="color: #666666">=</span> Xen-Orchestra
+
+<span style="color: #666666">[</span>alt_names<span style="color: #666666">]</span>
+<span style="background-color: #ffffcc">DNS.1   <span style="color: #666666">=</span> xo.example.local
+</span><span style="background-color: #ffffcc">IP.1    <span style="color: #666666">=</span> <span style="color: #666666">192</span>.168.0.10
+</span></pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info<p>Set the domain name/FQDN (DNS) and the IP address of the server running Xen-Orchestra in the <code>alt_names</code> section and the Common Name (CN) in the <code>dn_req</code> section. Some browsers disable the use of self-signed certificates without valid Subject Alternative Names.</p>
+</p>
+</div>
+<p>Generate the key and certificate:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo openssl req -x509 <span style="color: #BB6622; font-weight: bold">\</span>
+-nodes  -days <span style="color: #666666">730</span> <span style="color: #BB6622; font-weight: bold">\</span>
+-keyout /etc/ssl/private/xo/key.pem <span style="color: #BB6622; font-weight: bold">\</span>
+-out    /etc/ssl/private/xo/certificate.pem <span style="color: #BB6622; font-weight: bold">\</span>
+-config /etc/ssl/private/xo/req.conf
+</pre></div>
+
+<p>Allow HTTPS (port 443) access through the firewall:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --permanent --zone<span style="color: #666666">=</span>public --add-service<span style="color: #666666">=</span>https
+</pre></div>
+
+<p>Reload the firewall:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo firewall-cmd --reload
+</pre></div>
+
+<h3 id="systemd">systemd<a class="headerlink" href="#systemd" title="Permanent link">&para;</a></h3>
+<p>Create the <code>systemd</code> unit file:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000">echo</span> -e <span style="color: #BA2121">&quot;[Unit]\n\</span>
+<span style="color: #BA2121">Description=Xen-Orchestra - Xen Server Web Manager\n\</span>
+<span style="color: #BA2121">After=network.target\n\</span>
+<span style="color: #BA2121">After=network-online.target\n\</span>
+<span style="color: #BA2121">Wants=network-online.target\n\n\</span>
+<span style="color: #BA2121">[Service]\n\</span>
+<span style="color: #BA2121">User=xo\n\</span>
+<span style="color: #BA2121">Group=xo\n\</span>
+<span style="color: #BA2121">WorkingDirectory=/opt/xen-orchestra/packages/xo-server\n\</span>
+<span style="color: #BA2121">ExecStart=/usr/bin/yarn start\n\</span>
+<span style="color: #BA2121">Restart=always\n\</span>
+<span style="color: #BA2121">RestartSec=10\n\n\</span>
+<span style="color: #BA2121">[Install]\n\</span>
+<span style="color: #BA2121">WantedBy=multi-user.target&quot;</span> | sudo tee /etc/systemd/system/xo.service
+</pre></div>
+
+<details class="summary"><summary><code>/etc/systemd/system/xo.service</code></summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>Unit<span style="color: #666666">]</span>
+<span style="color: #19177C">Description</span><span style="color: #666666">=</span>Xen-Orchestra - Xen Server Web Manager
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>network.target
+<span style="color: #19177C">After</span><span style="color: #666666">=</span>network-online.target
+<span style="color: #19177C">Wants</span><span style="color: #666666">=</span>network-online.target
+
+<span style="color: #666666">[</span>Service<span style="color: #666666">]</span>
+<span style="color: #19177C">User</span><span style="color: #666666">=</span>xo
+<span style="color: #19177C">Group</span><span style="color: #666666">=</span>xo
+<span style="color: #19177C">WorkingDirectory</span><span style="color: #666666">=</span>/opt/xen-orchestra/packages/xo-server
+<span style="color: #19177C">ExecStart</span><span style="color: #666666">=</span>/usr/bin/yarn start
+<span style="color: #19177C">Restart</span><span style="color: #666666">=</span>always
+<span style="color: #19177C">RestartSec</span><span style="color: #666666">=10</span>
+
+<span style="color: #666666">[</span>Install<span style="color: #666666">]</span>
+<span style="color: #19177C">WantedBy</span><span style="color: #666666">=</span>multi-user.target
+</pre></div>
+
+</details>
+<p>Update the <code>systemd</code> database:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl daemon-reload
+</pre></div>
+
+<p>Set Xen-Orchestra to start on boot and start:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl <span style="color: #008000">enable</span> --now xo.service
+</pre></div>
+
+<p>In your browser, navigate to the URL or IP address of the server.</p>
+<p>Default credentials are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Username</td>
+<td>admin@admin.net</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>admin</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nfs-mounts">NFS Mounts<a class="headerlink" href="#nfs-mounts" title="Permanent link">&para;</a></h2>
+<p>If Xen-Orchestra will mount to NFS remotes, some additional configuration is needed.</p>
+<p>NFS mounts are created in <code>/run/xo-server</code> by default, so Xen-Orchestra needs that runtime directory.</p>
+<p>Stop Xen-Orchestra:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl stop xo
+</pre></div>
+
+<p>Create a directory for service drop-ins:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo mkdir /etc/systemd/system/xo.service.d
+</pre></div>
+
+<p>Create the service drop-in that sets the runtime directory and that directory's permissions mode:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000">echo</span> -e <span style="color: #BA2121">&quot;[Service]\n\</span>
+<span style="color: #BA2121">RuntimeDirectory=xo-server\n\</span>
+<span style="color: #BA2121">RuntimeDirectoryMode=0750&quot;</span> | sudo tee /etc/systemd/system/xo.service.d/nfs.conf
+</pre></div>
+
+<details class="summary"><summary><code>/etc/systemd/system/xo.service.d/nfs.conf</code></summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #666666">[</span>Service<span style="color: #666666">]</span>
+<span style="color: #19177C">RuntimeDirectory</span><span style="color: #666666">=</span>xo-server
+<span style="color: #19177C">RuntimeDirectoryMode</span><span style="color: #666666">=0750</span>
+</pre></div>
+
+</details>
+<p>Update the <code>systemd</code> database to include the new drop-in:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl daemon-reload
+</pre></div>
+
+<p>Install <code>nfs-utils</code>:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo yum install -y nfs-utils
+</pre></div>
+
+<p>Modify the Xen-Orchestra configuration to use <code>sudo</code>. This is required for Xen-Orchestra to run the <code>mount</code> and <code>unmount</code> commands.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo sed -i <span style="color: #BA2121">&#39;s/#useSudo = false/useSudo = true/g&#39;</span> /etc/xo-server/config.toml
+</pre></div>
+
+<details class="quote"><summary>Diff</summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #A00000">-- #useSudo = false</span>
+<span style="color: #00A000">++ useSudo = true</span>
+</pre></div>
+
+</details>
+<details class="summary"><summary><code>/etc/xo-server/config.toml</code></summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">[remoteOptions]</span>
+useSudo <span style="color: #666666">=</span> <span style="color: #008000; font-weight: bold">true</span>
+</pre></div>
+
+</details>
+<p>Add the <code>xo</code> user to the <code>sudoers</code> file to allow no-password access to the <code>mount</code> and <code>unmount</code> commands:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000">echo</span> -e <span style="color: #BA2121">&quot;xo\tALL=(root)\tNOPASSWD: /bin/mount, /bin/umount&quot;</span> | sudo tee --append /etc/sudoers
+</pre></div>
+
+<details class="summary"><summary><code>/etc/sudoers</code></summary><div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>xo  <span style="color: #19177C">ALL</span><span style="color: #666666">=(</span>root<span style="color: #666666">)</span>  NOPASSWD: /bin/mount, /bin/umount
+</pre></div>
+
+</details>
+<p>Start Xen-Orchestra:</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo systemctl start xo
+</pre></div>
+
+<h2 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">&para;</a></h2>
+<p>Several plugins are included in the Xen-Orchestra repository, but must be "enabled".</p>
+<h3 id="auth-github">auth-github<a class="headerlink" href="#auth-github" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to allow users to login using Github Single Sign-On (SSO).</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-auth-github /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="auth-google">auth-google<a class="headerlink" href="#auth-google" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to allow users to login using Google Single Sign-On (SSO).</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-auth-google /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="auth-ldap">auth-ldap<a class="headerlink" href="#auth-ldap" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to allow users to login using the Lightweight Directory Access Protocol (LDAP).</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-auth-ldap /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="auth-saml">auth-saml<a class="headerlink" href="#auth-saml" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to allow users to login using Security Assertion Markup Language (SAML).</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-auth-saml /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="backup-reports">backup-reports<a class="headerlink" href="#backup-reports" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to deliver Backup task reports to specified users through E-Mail or eXtensible Messaging and Presence Protocol (XMPP).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>E-Mail reports require the <a href="#transport-email">transport-email</a> plugin</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>XMPP reports require the <a href="#transport-xmpp">transport-xmpp</a> plugin</p>
+</div>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-backup-reports /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="load-balancer">load-balancer<a class="headerlink" href="#load-balancer" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to assign balance Virtual Machines between servers in a pool based on performance, density, or configurable CPU or memory thresholds.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-load-balancer /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="perf-alert">perf-alert<a class="headerlink" href="#perf-alert" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to notify specified users when a host or Virtual Machine reaches a specifed CPU or memory utilization threshold. Notifications for Storage Repository usage is also configurable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>E-Mail reports require the <a href="#transport-email">transport-email</a> plugin</p>
+</div>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-perf-alert /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="sdn-controller">sdn-controller<a class="headerlink" href="#sdn-controller" title="Permanent link">&para;</a></h3>
+<p>This plugin can be enabled to control OpenVSwitch virtual networks. Can be configured with a TLS certificate and key to encrypt network traffic.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-sdn-controller /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="transport-email">transport-email<a class="headerlink" href="#transport-email" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to use an SMTP service to send E-Mail.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-transport-email /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="transport-icinga2">transport-icinga2<a class="headerlink" href="#transport-icinga2" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send notifications to an <a href="https://icinga.com/docs/icinga2/latest/">Icinga 2</a> server.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-transport-icinga2 /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="transport-nagios">transport-nagios<a class="headerlink" href="#transport-nagios" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send notifications to a <a href="https://www.nagios.org/">Nagios</a> server.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-transport-nagios /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="transport-slack">transport-slack<a class="headerlink" href="#transport-slack" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send notifications to a <a href="https://slack.com/">Slack</a> channel.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-transport-slack /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="transport-xmpp">transport-xmpp<a class="headerlink" href="#transport-xmpp" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send notifications to an XMPP server.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-transport-xmpp /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="usage-report">usage-report<a class="headerlink" href="#usage-report" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send usage reports to specified users on monthly, weekly, or daily intervals.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>E-Mail reports require the <a href="#transport-email">transport-email</a> plugin</p>
+</div>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-usage-report /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+
+<h3 id="web-hooks">web-hooks<a class="headerlink" href="#web-hooks" title="Permanent link">&para;</a></h3>
+<p>This plugin can be configured to send web hook messages on specifed events to a receiving endpoint.</p>
+<p>Create a symbolic link from the plugin's directory to the <code>xo-server</code> <code>node_modules</code> directory. Plugin is enabled on restart.</p>
+<div class="codehilite" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>sudo -u xo ln -s /opt/xen-orchestra/packages/xo-server-web-hooks /opt/xen-orchestra/packages/xo-server/node_modules/
+</pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../../rfc/ldap/" title="LDAP" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                LDAP
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 W Anders
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      
+    
+  </body>
+</html>
