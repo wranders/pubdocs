@@ -46,7 +46,5 @@ nav:
     - 'guides/README.md'
     - Services:
       - 'guides/services/README.md'
-#     - Gitea:
-#       - Gitea - CentOS: 'guides/services/gitea/centos/README.md'
       - Xen-Orchestra: 'guides/services/xen-orchestra/README.md'
     - Self-Signed Certificate with Root: 'guides/self-signed-certificate-with-root/README.md'
