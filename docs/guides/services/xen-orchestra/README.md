@@ -11,7 +11,7 @@ This guide is written using the following versions:
 
 Certain considerations with configuration have been taken to satisfy my environment and requirements. Most notably:
 
-1. [XCP-ng](https://xcp-ng.org/) servers use certificates from my internal certificate authority (CA), so for Node.js to use the system's roots or provided roots, it must run in an unprivileged state.
+1. [XCP-ng](https://xcp-ng.org/) servers use certificates from my internal certificate authority (CA), so for Node.js to use the system's roots or provided roots without allowing "Unauthorized Certificates", it must run in an unprivileged state.
     * Non-root user
     * Non-system user
     * No Linux Capablities (ie. `cap_net_bind_service`), so no binding to ports <1024
