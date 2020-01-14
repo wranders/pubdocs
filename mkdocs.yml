@@ -4,7 +4,7 @@ site_description: Public Documentation
 site_author: W Anders
 repo_url: https://github.com/wranders/pubdocs/
 edit_uri: edit/src/docs
-copyright: 'Copyright &copy; 2019 W Anders'
+copyright: 'Copyright &copy; 2018-2020 W Anders'
 remote_branch: master
 
 theme:
@@ -43,8 +43,10 @@ nav:
     - IETF RFC:
       - LDAP: 'rfc/ldap/README.md'
   - Guides:
+    - 'guides/README.md'
     - Services:
+      - 'guides/services/README.md'
 #     - Gitea:
 #       - Gitea - CentOS: 'guides/services/gitea/centos/README.md'
-      - Xen Orchestra:
-        - Xen Orchestra - CentOS 7: 'guides/services/xen-orchestra/centos7/README.md'
+      - Xen-Orchestra: 'guides/services/xen-orchestra/README.md'
+    - Self-Signed Certificate with Root: 'guides/self-signed-certificate-with-root/README.md'
