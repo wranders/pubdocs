@@ -1,8 +1,8 @@
-site_name: Public Docs
-site_url: https://www.doubleu.codes/pubdocs/
-site_description: Public Documentation
+site_name: Memory &omega;
+site_url: https://www.doubleu.codes/docs/
+site_description: Documentation
 site_author: W Anders
-repo_url: https://github.com/wranders/pubdocs/
+repo_url: https://github.com/wranders/docs/
 edit_uri: edit/src/docs
 copyright: 'Copyright &copy; 2018-2020 W Anders'
 remote_branch: master
@@ -36,12 +36,12 @@ nav:
   - Welcome: 'README.md'
   - Knowledge Base:
     - 'kb/README.md'
+    - IETF RFC:
+      - LDAP: 'rfc/ldap/README.md'
     - Servers:
       - Dell R510: 'kb/servers/dell-r510/README.md'
       - Dell R610: 'kb/servers/dell-r610/README.md'
     - Interface Bit Rates: 'kb/interface-bit-rates/README.md'
-    - IETF RFC:
-      - LDAP: 'rfc/ldap/README.md'
   - Guides:
     - 'guides/README.md'
     - Services:
