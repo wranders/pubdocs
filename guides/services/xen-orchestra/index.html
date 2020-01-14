@@ -982,7 +982,7 @@
 </ul>
 <p>Certain considerations with configuration have been taken to satisfy my environment and requirements. Most notably:</p>
 <ol>
-<li><a href="https://xcp-ng.org/">XCP-ng</a> servers use certificates from my internal certificate authority (CA), so for Node.js to use the system's roots or provided roots, it must run in an unprivileged state.<ul>
+<li><a href="https://xcp-ng.org/">XCP-ng</a> servers use certificates from my internal certificate authority (CA), so for Node.js to use the system's roots or provided roots without allowing "Unauthorized Certificates", it must run in an unprivileged state.<ul>
 <li>Non-root user</li>
 <li>Non-system user</li>
 <li>No Linux Capablities (ie. <code>cap_net_bind_service</code>), so no binding to ports &lt;1024</li>
