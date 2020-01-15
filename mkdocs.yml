@@ -47,4 +47,7 @@ nav:
     - Services:
       - 'guides/services/README.md'
       - Xen-Orchestra: 'guides/services/xen-orchestra/README.md'
+    - XCP-ng:
+      - 'guides/xcp-ng/README.md'
+      - ZFS Local Storage: 'guides/xcp-ng/zfs-local-storage/README.md'
     - Self-Signed Certificate with Root: 'guides/self-signed-certificate-with-root/README.md'
