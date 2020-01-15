@@ -46,6 +46,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://www.doubleu.codes/docs/guides/xcp-ng/</loc>
+     <lastmod>2020-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://www.doubleu.codes/docs/guides/xcp-ng/zfs-local-storage/</loc>
+     <lastmod>2020-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://www.doubleu.codes/docs/guides/self-signed-certificate-with-root/</loc>
      <lastmod>2020-01-14</lastmod>
      <changefreq>daily</changefreq>
