@@ -4,7 +4,7 @@ site_description: Documentation
 site_author: W Anders
 repo_url: https://github.com/wranders/docs/
 edit_uri: edit/src/docs
-copyright: 'Copyright &copy; 2018-2020 W Anders'
+copyright: 'Copyright &copy; 2018-2021 W Anders'
 remote_branch: master
 
 theme:
